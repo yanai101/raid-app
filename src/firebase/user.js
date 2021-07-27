@@ -35,6 +35,13 @@ export const updateUserDocument = async (user) => {
 
 export const deleteUser = async (id) => {
   const docRef = fireStore.doc(`/users/${id}`);
+  try {
+    const filePath = `users/${id}/profile-image`;
+    const fileRef =  storage.ref().child(filePath);
+    fileRef.delete();
+  } catch (error) {
+    console.log(error)
+  }
   return docRef.delete();
 };
 

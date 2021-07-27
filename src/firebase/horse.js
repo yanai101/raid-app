@@ -35,6 +35,14 @@ export const updateHorseDocument = async (horse) => {
 
 export const deleteHorse = async (id) => {
   const docRef = fireStore.doc(`/horses/${id}`);
+	try {
+    const filePath = `horses/${id}/profile-image`;
+		const fileRef = storage.ref().child(filePath);
+		fileRef.delete();
+  } catch (error) {
+    console.log(error)
+  }
+	
   return docRef.delete();
 };
 
