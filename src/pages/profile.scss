@@ -1,0 +1,10 @@
+.profile {
+  width: 80vw;
+  inset: 80px;
+  .form-group {
+    margin-block: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2vw;
+  }
+}
