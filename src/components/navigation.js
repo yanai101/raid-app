@@ -35,7 +35,7 @@ export default function Navigation() {
       className={classes.root}
     >
       <BottomNavigationAction value="home" label="Home" icon={<HomeIcon />} />
-      <BottomNavigationAction value="calendar" label="Calendar" icon={<EventIcon />} />
+      <BottomNavigationAction value="calender" label="Calendar" icon={<EventIcon />} />
       <BottomNavigationAction value="users" label="Users" icon={<GroupIcon />} />
       <BottomNavigationAction value="horsesList" label="Horses List" icon={<PetsIcon />} />
     </BottomNavigation>

@@ -1,0 +1,9 @@
+#external-events {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  div {
+    width: fit-content;
+    padding: 3px;
+  }
+}

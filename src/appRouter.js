@@ -7,6 +7,8 @@ import Profile from "./pages/profile";
 import Horses from "./pages/horses";
 import Users from "./pages/users";
 import HorsesList from "./pages/horsesList";
+import calendarPage from "./pages/calendarPage";
+
 
 
 import RedirectRoute from "./router/redirectRoute";
@@ -28,6 +30,8 @@ export default function AppRouter() {
               <RedirectRoute exact path="/horses/:id" component={Horses} />
               <RedirectRoute exact path="/horses" component={Horses} />
               <RedirectRoute exact path="/horsesList" component={HorsesList} />
+              <RedirectRoute exact path="/calender" component={calendarPage} />
+
               <Route path="/">
                 <Login />
               </Route>
