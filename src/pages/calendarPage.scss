@@ -1,9 +1,15 @@
 #external-events {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  height: 100vh;
+  overflow-y: align;
   div {
     width: fit-content;
-    padding: 3px;
+    margin: 5px;
+    overflow: hidden;
   }
+}
+
+.calender-page {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  grid-gap: 10px;
 }
